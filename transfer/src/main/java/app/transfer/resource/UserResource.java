@@ -17,14 +17,14 @@ public class UserResource {
     @GetMapping
     public List<User> getUsers() {
         return Arrays.asList(
-                new User("Peter", 2000L, "EUR"),
-                new User("Dima", 5000L, "CHF"),
-                new User("Roma", 3000L, "GBP")
+                new User("Peter", 2000, "EUR"),
+                new User("Dima", 5000, "CHF"),
+                new User("Roma", 3000, "GBP")
         );
     }
 
     @GetMapping("/{userName}")
     public User getUser(@PathVariable("userName") final String userName) {
-        return new User("userName", 1000L, "EUR");
+        return new User("userName", 1000, "EUR");
     }
 }

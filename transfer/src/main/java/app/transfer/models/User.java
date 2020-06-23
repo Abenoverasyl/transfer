@@ -2,10 +2,10 @@ package app.transfer.models;
 
 public class User {
     private String userName;
-    private long money;
+    private int money;
     private String rate;
 
-    public User(String userName, long money, String rate) {
+    public User(String userName, int money, String rate) {
         this.userName = userName;
         this.money = money;
         this.rate = rate;
@@ -19,11 +19,11 @@ public class User {
         this.userName = userName;
     }
 
-    public long getMoney() {
+    public int getMoney() {
         return money;
     }
 
-    public void setMoney(long money) {
+    public void setMoney(int money) {
         this.money = money;
     }
 
